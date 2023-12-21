@@ -1,8 +1,9 @@
 // Variables
-$primary-color: #3498db; // Feel free to choose your own color
-$text-color: #333;
-$nav-background: #f8f8f8;
-$nav-text-color: #333;
+$primary-color: #3498db; // Primary color for links
+$text-color: #333; // Text color
+$nav-background: #f8f8f8; // Navigation bar background color
+$nav-text-color: #333; // Navigation text color
+$profile-size: 80px; // Profile picture size
 
 // Base styles
 body {
@@ -20,35 +21,6 @@ a {
   }
 }
 
-// Navigation bar styles
-nav {
-  background: $nav-background;
-  border-bottom: 1px solid #e7e7e7;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: $nav-text-color;
-  font-weight: bold;
-}
-
-// Content styles
-.content {
-  margin: 20px;
-}
-
-
 // Header styles
 .site-header {
   display: flex;
@@ -59,37 +31,44 @@ nav ul li a {
   border-bottom: 1px solid #e7e7e7;
 }
 
-.name-section h1 {
-  margin: 0;
-  font-weight: bold;
-}
-
-.name-section p {
-  margin: 0;
-  font-size: 0.8em;
+.name-section {
+  h1 {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    color: $text-color;
+  }
+  p {
+    margin: 0;
+    font-size: 0.8em;
+    color: $text-color;
+  }
 }
 
 .profile-picture img {
-  width: 100px; // Adjust as needed
-  height: auto;
-  border-radius: 50%; // Circular profile picture
+  width: $profile-size;
+  height: $profile-size;
+  border-radius: 50%;
+  border: 1px solid #ccc;
 }
 
-// Adjusted navigation bar styles
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+// Navigation bar styles
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  li {
+    margin: 0 10px;
+  }
+  a {
+    color: $nav-text-color;
+    font-weight: bold;
+  }
 }
 
-nav ul li {
-  margin: 0 10px;
+// Content styles
+.content {
+  margin: 20px;
 }
-
-nav ul li a {
-  color: $nav-text-color;
-  font-weight: bold;
-}
-
-
