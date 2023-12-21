@@ -5,15 +5,24 @@
     <title>{{ page.title }}</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">About Me</a></li>
-            <li><a href="/cybersecurity-projects/">Cybersecurity Projects</a></li>
-            <li><a href="/ai-projects/">AI Projects</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <div class="name-section">
+            <h1>Your Name</h1>
+            <p>About me, my research, my teaching, and my experimentations</p>
+        </div>
+        <div class="profile-picture">
+            <img src="/assets/images/profile.jpg" alt="Profile Picture">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">About Me</a></li>
+                <li><a href="/cybersecurity-projects/">Cybersecurity Projects</a></li>
+                <li><a href="/ai-projects/">AI Projects</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="content">
         {{ content }}
     </div>
 </body>
-</html> 
+</html>
