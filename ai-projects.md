@@ -1,7 +1,5 @@
 ---
 layout: default
 title: AI Projects
+permalink: /ai-projects/
 ---
-
-Your AI projects content here.
-
